@@ -102,3 +102,20 @@ h3 {
   text-align: center;
   color: $black;
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    border-top: solid black 1px;
+    height: 25px;
+    img {
+      width: 20px;
+      padding: 0 5px;
+    }
+  }
+}

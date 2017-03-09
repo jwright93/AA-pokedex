@@ -10,13 +10,14 @@ class PokemonIndex extends React.Component {
   }
   render() {
     return (
-      <ul>
+      <ol className="sidebar">
         {this.props.pokemon.map((pokemon, i) => {
-          return <li key={i}>{pokemon.name}
+          return <li key={i}>
             <img src={pokemon.image_url}/>
+            {pokemon.name}
           </li>;
         })}
-      </ul>
+      </ol>
     );
   }
 }
