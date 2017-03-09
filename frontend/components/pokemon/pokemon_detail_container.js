@@ -2,7 +2,6 @@ import { connect } from 'react-redux';
 import { requestSinglePokemon } from '../../actions/pokemon_actions';
 import PokemonDetail from './pokemon_detail';
 
-// QUESTION: Why do we need this both here and in the root reducer?
 const mapStateToProps = state => ({
   pokemonDetail: state.pokemonDetail
 });
