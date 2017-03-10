@@ -18,11 +18,11 @@ class PokemonIndex extends React.Component {
     ));
 
     return (
-      <div>
-        {this.props.children}
+      <div className="pokedex">
         <ol className="sidebar">
           {pokemonItems}
         </ol>
+        {this.props.children}
       </div>
     );
   }

@@ -15,11 +15,22 @@ class PokemonDetail extends React.Component {
     }
   }
 
+  // TODO: Join moves with commas
   render() {
-    const pokemonId = this.props.params.pokemonId;
+    const poke = this.props.pokemonDetail;
+
     return (
-      <div>
-        {this.props.pokemonDetail.name}
+      <div className="pokemonDetails">
+        <ul>
+          <li>
+            <img src={poke.image_url} />
+          </li>
+          <li>{poke.name}</li>
+          <li>Type: {poke.poke_type}</li>
+          <li>Attack: {poke.attack}</li>
+          <li>Defense: {poke.defense}</li>
+          <li>Moves: {poke.moves}</li>
+        </ul>
         <br/>
       </div>
     );
