@@ -130,12 +130,23 @@ h3 {
 .pokemonDetails {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
-  ul {
+  ul.details {
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  ul.items {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .items img {
+    height: 111px;
   }
 }
